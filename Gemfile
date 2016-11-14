@@ -5,6 +5,17 @@ gem "twitter-bootstrap-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
+
+group :development, :test do
+  # Use sqlite3 as the database for Active Record (development, test)
+  gem 'sqlite3'
+end
+
+group :production do
+  # Use postgres as the database for Active Record (production)
+  gem 'pg'
+end
+
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
