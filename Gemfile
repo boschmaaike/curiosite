@@ -16,8 +16,6 @@ group :production do
   gem 'pg'
 end
 
-gem 'sqlite3'
-# Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
